@@ -1,0 +1,35 @@
+.post-browser {
+    margin-top: 75px;
+    padding: 25px;
+}
+
+.topbar {
+    width: 100%;
+    min-height: 0px;
+    overflow: hidden;
+    background-color: #272727;
+}
+
+.btn {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #00c100;
+    padding: 10px;
+}
+
+.btn:hover {
+    background-color: #007100;
+}
+
+.browser {
+    padding: 20px 0;
+}
+
+.browser table {
+    width: 100%;
+    text-align: left;
+}
+
+.browser button {
+    width: 100%;
+}
