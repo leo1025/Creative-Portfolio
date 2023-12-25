@@ -1,16 +1,8 @@
 import Link from 'next/link'
-import './globals.css'
+import './navbar.css'
 
-export const metadata = {
-    title: 'Leona DA',
-    description: '',
-  }
-
-export default function MainLayout({
-    children,
-  }) {
+export default function Navbar() {
     return (
-      <html lang='en'>
         <header>
           <nav className='navbar'>
             <div className='container'>
@@ -23,7 +15,7 @@ export default function MainLayout({
                       <Link href="/about">About</Link>
                   </li>
                   <li>
-                      <Link href="/Media">Media</Link>
+                      <Link href="/browse">Browse</Link>
                   </li>                                    
                   <li>
                       <Link href="/portfolio">Portfolio</Link>
@@ -32,10 +24,5 @@ export default function MainLayout({
             </div>
           </nav>
         </header>
-        {children}
-        <footer className='container'>
-          <p>© 2024 Leona DA</p>
-        </footer>
-      </html>
     )
-  }
+}
