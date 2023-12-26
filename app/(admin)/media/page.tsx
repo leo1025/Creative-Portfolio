@@ -1,5 +1,24 @@
 export default function Page() {
-    return <div>
-        <h1>MEDIA PAGE</h1>
-    </div>
+    return (
+        <div className="container">
+            <div className="content">
+                <div>
+                    <h1>Media Manager</h1>
+                </div>
+                <div>
+                    <div>
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                    <div>
+                    
+                        <p>Selected File: </p>
+                        <img src='' alt="Preview" />
+                    </div>
+                </div>
+                
+            </div>
+        </div> 
+    )
 }
