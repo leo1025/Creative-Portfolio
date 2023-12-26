@@ -6,7 +6,7 @@ Goals:
 - Minimal Maintenance. 
 - Manual backup option, send all files into zip and download.
 - All posts written using HTML files that can be modified IN admin panel
-- Database for easy data management with only file link in content
+- Severless Database for easy data management with only file link in content
 
 App Tech:
 - Framework: NextJS
