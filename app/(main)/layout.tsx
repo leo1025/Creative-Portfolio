@@ -1,6 +1,6 @@
 import Navbar from '../../components/navbar'
 import Legal from '../../components/legal'
-import '../../styling/globals.css'
+import '../globals.css'
 
 export const metadata = {
     title: 'Leona DA',
@@ -12,9 +12,11 @@ export default function MainLayout({
   }) {
     return (
       <html lang='en'>
-        <Navbar />
-        {children}
-        <Legal />
+        <body>
+          <Navbar />
+          {children}
+          <Legal />
+        </body>
       </html>
     )
   }

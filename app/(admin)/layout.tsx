@@ -1,6 +1,6 @@
 import AdminNavBar from '../../components/admin-navbar'
 import Legal from '../../components/legal'
-import '../../styling/globals.css'
+import '../globals.css'
 
 export const metadata = {
     title: 'Admin Panel',
@@ -12,9 +12,11 @@ export default function AdminLayout({
   }) {
     return (
       <html lang='en'>
-        <AdminNavBar />
-        {children}
-        <Legal />
+        <body>
+          <AdminNavBar />
+          {children}
+          <Legal />
+        </body>
       </html>
     )
   }

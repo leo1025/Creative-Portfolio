@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import './postspages.css'
+import './postbrowser.css'
 
 interface BlogPost {
   id: number;
@@ -17,7 +17,7 @@ const blogPosts: BlogPost[] = [
 
 export default function Page() {
     return <div className="container">
-        <div className='post-browser'>
+        <div className='content'>
             <div className='topbar'>
                 <div className='p-10'>
                     <h1 className='float-left'>Post Browser</h1>

@@ -12,6 +12,9 @@
   "author": "leona",
   "license": "ISC",
   "dependencies": {
+    "@tiptap/pm": "^2.1.13",
+    "@tiptap/react": "^2.1.13",
+    "@tiptap/starter-kit": "^2.1.13",
     "next": "^14.0.4",
     "next-auth": "^4.24.5",
     "react": "^18.2.0",
