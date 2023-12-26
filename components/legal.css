@@ -3,9 +3,10 @@ footer {
     text-align: center;
     bottom: 0;
     width: 100%;
+    background-color: #262626;
 }
 
 footer p {
-    padding: 10px 0;
+    padding: 5px 0;
     margin: auto;
 }

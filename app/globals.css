@@ -35,3 +35,35 @@ p, h1, h2, h3, h4, h5 {
 .float-right {
     float: right;
 }
+
+.topbar {
+    width: 100%;
+    min-height: 0px;
+    overflow: hidden;
+    background-color: #272727;
+}
+
+.btn {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #00c100;
+    padding: 10px;
+    border: none;
+    box-shadow: none;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.btn:hover {
+    background-color: #007100;
+}
