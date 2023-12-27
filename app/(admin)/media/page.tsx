@@ -6,18 +6,19 @@ export default function Page() {
                     <h1>Media Manager</h1>
                 </div>
                 <div>
+                    <label>Upload</label>
+                    <form action="">
+                        <input type="file" id="files" name="files" multiple />
+                        <input type="submit" />
+                    </form>
+                </div>
+                <div>
                     <div>
                         <ul>
                             
                         </ul>
                     </div>
-                    <div>
-                    
-                        <p>Selected File: </p>
-                        <img src='' alt="Preview" />
-                    </div>
-                </div>
-                
+                </div>  
             </div>
         </div> 
     )
