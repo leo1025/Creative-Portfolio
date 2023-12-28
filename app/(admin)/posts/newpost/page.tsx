@@ -31,6 +31,10 @@ export default function Page() {
                                 <input type="text" />
                             </div>
                             <div className='option-row'>
+                                <label>Links</label>
+                                <input type="text" />
+                            </div>
+                            <div className='option-row'>
                                 <label>Excerpt</label>
                                 <input type="text" />
                             </div>

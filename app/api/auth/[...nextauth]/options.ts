@@ -8,8 +8,7 @@ export const options: NextAuthOptions = {
             credentials: {
                 username: {
                     label: "Username: ",
-                    type: "text",
-                    placeholder: "Admin username"
+                    type: "text"
                 },
                 password: {
                     label: "Password: ",

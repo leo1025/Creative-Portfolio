@@ -9,6 +9,9 @@ export default function AdminNavbar() {
               <p>Admin Panel</p>
               <ul className='nav-list'>
                 <li>
+                    <Link href="/dashboard">Dashboard</Link>
+                </li>            
+                <li>
                     <Link href="/media">Media</Link>
                 </li>                                    
                 <li>

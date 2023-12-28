@@ -14,8 +14,9 @@ App Tech:
 - Editing: TipTap
 - Security: Next-Auth
 - Database: SQLite
-- Images: Multer
+- Media: S3 Bucket
 
 Other:
-- Hosting: Vercel
-- Backups: Local
+- Hosting: Linode
+- CI/CD: Github Actions
+- Backups: Manual
