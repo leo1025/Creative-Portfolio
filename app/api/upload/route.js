@@ -48,8 +48,11 @@ export async function POST(request) {
 
         const buffer = Buffer.from(await file.arrayBuffer());
         const fileName = await uploadFileToS3(buffer, file.name);
+        if(!fileName) {
+            return NextResponse.json({ error: "Failed to upload to S3 server."}, { status: 401 });
+        }
 
-        return NextResponse.json({ success: true, fileName });
+        return NextResponse.json({ success: true });
     } catch (error) {
         return NextResponse.json({ error })
     }
