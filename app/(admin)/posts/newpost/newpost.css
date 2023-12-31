@@ -4,8 +4,12 @@ form {
 }
 
 .editor {
-    margin: 25px 0;
-    height: 500px;
+    min-height: 68vh;
+    display: flex;
+}
+
+.tiptap {
+    background-color: #141414;
 }
 
 .option-row {

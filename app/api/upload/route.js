@@ -1,35 +1,15 @@
 import { NextResponse } from "next/server";
-import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 
-const client = new S3Client({
-    region: process.env.AWS_S3_REGION,
-    credentials: {
-        accessKeyId: process.env.AWS_S3_ACCESS_KEY_ID,
-        secretAccessKey: process.env.AWS_S3_SECRET_ACCESS_KEY,
-    },
-    endpoint: process.env.AWS_S3_ENDPOINT
-})
+async function uploadFileToBucket(file, fileName, folder) {
 
-async function uploadFileToS3(file, fileName) {
-    const fileBuffer = file;
-
-	const params = {
-		Bucket: process.env.AWS_S3_BUCKET_NAME,
-		Key: `images/${fileName}`,
-		Body: fileBuffer,
-		ContentType: "image/jpg",
-        ACL: "public-read"
-	}
-
-	const command = new PutObjectCommand(params);
-	await client.send(command);
-	return fileName;
 }
 
 export async function POST(request) {
     try {
         const formData = await request.formData();
+        
         const file = formData.get("file");
+        const folder = formData.get("folder");
 
         if (!file) {
             return NextResponse.json({ error: "File is required." }, { status: 400 });
@@ -41,13 +21,13 @@ export async function POST(request) {
         }
 
         // Check file type
-        const allowedFileTypes = ["image/png", "image/jpeg"];
+        const allowedFileTypes = ["image/png", "image/jpeg", "text/html"];
         if (!allowedFileTypes.includes(file.type)) {
             return NextResponse.json({ error: "File type not supported. Only PNG and JPG are allowed." }, { status: 400 });
         }
 
         const buffer = Buffer.from(await file.arrayBuffer());
-        const fileName = await uploadFileToS3(buffer, file.name);
+        const fileName = await uploadFileToBucket(buffer, file.name, folder);
         if(!fileName) {
             return NextResponse.json({ error: "Failed to upload to S3 server."}, { status: 401 });
         }

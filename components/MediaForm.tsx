@@ -53,6 +53,7 @@ export default function MediaForm() {
         setUploading(true);
         const formData = new FormData();
         formData.append("file", file);
+        formData.append("folder", "images");
 
         try {
             const response = await fetch("/api/upload", {

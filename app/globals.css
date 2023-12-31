@@ -10,6 +10,10 @@ p, h1, h2, h3, h4, h5 {
     padding: 0;
 }
 
+img {
+    max-width: 90%;
+}
+
 .container {
     width: 75%;
     margin: auto;
@@ -66,4 +70,20 @@ p, h1, h2, h3, h4, h5 {
 
 .btn:hover {
     background-color: #007100;
+}
+
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 45%;
+    top: 45%;
+    width: 10%; /* Full width */
+    height: 10%; /* Full height */
+    background-color: #007100;
+    border: 1px solid #000000;
+    padding: 25px;
+}
+
+.modal-content {
+    padding: 20px;
 }
