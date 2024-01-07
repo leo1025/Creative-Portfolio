@@ -1,4 +1,4 @@
-import MediaForm from "../../../components/MediaForm"
+import MediaForm from "../../../components/client/MediaForm"
 
 export default function Page() {
     return (

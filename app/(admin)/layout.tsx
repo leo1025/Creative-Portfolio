@@ -1,5 +1,5 @@
-import AdminNavBar from '../../components/admin-navbar'
-import Legal from '../../components/legal'
+import AdminNavBar from '../../components/server/admin-navbar'
+import Legal from '../../components/server/legal'
 import '../globals.css'
 
 export const metadata = {

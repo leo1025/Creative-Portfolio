@@ -1,6 +1,10 @@
 import { NextResponse } from "next/server";
 
-async function uploadFileToBucket(file, fileName, folder) {
+async function uploadFileToDatabase(fileName, folder) {
+    
+}
+
+async function uploadFileToStorage(file, fileName, folder) {
 
 }
 

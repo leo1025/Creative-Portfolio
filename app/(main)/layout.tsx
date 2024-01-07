@@ -1,5 +1,5 @@
-import Navbar from '../../components/navbar'
-import Legal from '../../components/legal'
+import Navbar from '../../components/server/navbar'
+import Legal from '../../components/server/legal'
 import '../globals.css'
 
 export const metadata = {

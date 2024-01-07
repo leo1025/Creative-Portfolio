@@ -1,3 +1,5 @@
+'use client'
+
 export default function ImageModal({ images, onSelect }) {
     return (
       <div className='modal'>
