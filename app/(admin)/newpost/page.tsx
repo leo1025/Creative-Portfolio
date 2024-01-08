@@ -1,4 +1,4 @@
-import PostEditor from '../../../../components/client/PostEditor'
+import PostEditor from '../../../components/client/PostEditor'
 import './newpost.css'
 
 export default function Page() {

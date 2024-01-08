@@ -7,7 +7,7 @@ export default function Page() {
             <div className='topbar'>
                 <div className='p-10'>
                     <h1 className='float-left'>Post Browser</h1>
-                    <Link className='btn float-right' href="/posts/newpost">New Post +</Link> 
+                    <Link className='btn float-right' href="/newpost">New Post +</Link> 
                 </div>        
             </div>
             <div className='browser'>

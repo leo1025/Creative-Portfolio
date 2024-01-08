@@ -13,10 +13,5 @@ App Tech:
 - Styling: Custom CSS
 - Editing: TipTap
 - Security: Next-Auth
-- Database: SQLite
-- Media: S3 Bucket
-
-Other:
-- Hosting: Linode
+- Backend: Firebase
 - CI/CD: Github Actions
-- Backups: Manual

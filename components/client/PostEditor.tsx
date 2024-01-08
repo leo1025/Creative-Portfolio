@@ -7,7 +7,7 @@ import Dropcursor from '@tiptap/extension-dropcursor'
 import Image from '@tiptap/extension-image'
 import { EditorProvider } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 import TiptapMenuBar from './TiptapMenuBar'
 
@@ -36,20 +36,6 @@ const content = `
 export default () => {
 
   const [featureImage, setFeatureImage] = useState('');
-  const [imageList, setImageList] = useState([]);
-
-  useEffect(() => {
-    const getFeatureImageList = async () => {
-      const response = await fetch("/api/media", {
-        method: "GET"
-      });
-
-      const result = await response.json();
-      setImageList(result.fileList);
-    };
-
-    getFeatureImageList();
-  }, []);
 
   return (
     <form>
@@ -82,17 +68,12 @@ export default () => {
             </div>
             <div className='option-row'>
                 <label>Feature</label>
-                <select
+                <input
+                  type='text'
                   value={featureImage}
                   onChange={(e) => setFeatureImage(e.target.value)}
                 >
-                  <option value=""></option>
-                  {imageList.map((image, index) => (
-                    <option key={index} value={image[0] + image[1]}>
-                      {image[1]}
-                    </option>
-                  ))}
-                </select>
+                </input>
             </div>
             <div className='option-row'>
                 <img src={featureImage} alt="Featured Image" />

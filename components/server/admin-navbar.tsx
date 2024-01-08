@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import './navbar.css'
 
 export default function AdminNavbar() {
@@ -6,18 +5,7 @@ export default function AdminNavbar() {
         <header>
           <nav className='admin-navbar'>
             <div className='container'>
-              <p>Admin Panel</p>
-              <ul className='nav-list'>
-                <li>
-                    <Link href="/dashboard">Dashboard</Link>
-                </li>            
-                <li>
-                    <Link href="/media">Media</Link>
-                </li>                                    
-                <li>
-                    <Link href="/posts">Posts</Link>
-                </li>
-              </ul>
+              <p>Post Editor</p>
             </div>
           </nav>
         </header>

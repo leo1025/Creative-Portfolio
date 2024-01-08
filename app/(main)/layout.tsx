@@ -1,6 +1,6 @@
 import Navbar from '../../components/server/navbar'
 import Legal from '../../components/server/legal'
-import '../globals.css'
+import './globals.css'
 
 export const metadata = {
     title: 'Leona DA',

@@ -5,3 +5,5 @@ package-lock.json
 .next
 .env
 .vscode
+
+admin.json
